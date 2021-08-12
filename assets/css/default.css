@@ -1,4 +1,5 @@
 @import url("fonts.css");
+@import url("index.css");
 
 /** Basic styling */
 body {
@@ -32,28 +33,26 @@ p {
     margin-top: 0px; border-width:0; width: 100%; background-color: #edd687; color: #edd687; height: 8px;    
 }
 
-.hrpost {
-    margin-top: 0px; border-width:0; width: 100%; background-color: #edd687; color: #edd687; height: 1px;    
+.logo {
+    padding-bottom: 1rem;
 }
 
-.hmain {
+.logo-img {
+    display:inline;
+    vertical-align:middle;
+}
+
+.logo-h {
     color: #c79e12;
     font-family: Lato_Light;
-}
-@media screen and (max-width: 600px) {
-    .hmain {
-        font-size: 1.5rem;
-    }
-}
-
-.hpost {
-    color: #eaeaea;
-    font-family: SourceSansPro_Light;
+    display:inline;
+    vertical-align:middle;
+    padding-left: 0.5rem;
     font-size: 2.2rem;
 }
 @media screen and (max-width: 600px) {
-    .hpost {
-        font-size: 1.5rem;
+    .logo-h {
+        font-size: 2.0rem;
     }
 }
 
@@ -61,26 +60,6 @@ p {
     content: "";
     display: table;
     clear: both;
-}
-
-.content-row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-@media screen and (max-width: 600px) {
-    .content-row:after {
-        padding-bottom:0;
-    }
-}
-
-.column1 {
-    float: left;
-    width: 15%;
-}
-.column2 {
-    float: left;
-    width: 85%;
 }
 
 .menubar {
@@ -103,6 +82,10 @@ p {
 @media screen and (max-width: 600px) {
     div.menubar-item {
         display: inline-block;
+        padding-right: 0.5rem;
+    }
+    .menubar-item {
+        font-size: 1.2rem;
     }
 }
 
@@ -141,11 +124,6 @@ p {
 .ulformatless {
     list-style: none;
     padding-left: 0;
-}
-
-.uldate {
-    color: #eaeaea;
-    font-size: 0.75rem;
 }
 
 a:link {

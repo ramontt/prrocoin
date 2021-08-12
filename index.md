@@ -2,17 +2,17 @@
 layout: default
 ---
 
-<div style="width:100%;margin:0;padding:0;">
+<div class="no-mar-pad">
     {% for post in site.posts %}
-        <div class="content-row" style="margin:0;padding:0;">
-            <div class="column1" style="margin:0;padding:0;"><hr class="hrpost"></div>
+        <div class="content-row no-mar-pad">
+            <div class="no-mar-pad"><hr class="post-hr"></div>
         </div>
-        <div class="content-row" style="margin:0;padding-left:0;padding-top:0;padding-right:0;padding-bottom:0.75rem;">
-            <div class="column1" style="margin:0;padding:0;">
-                <nobr><p class="uldate" style="display:inline;vertical-align:bottom">{{ post.date | date_to_string }}</p></nobr>
+        <div class="content-row content-row-spacing">
+            <div class="column1 no-mar-pad">
+                <nobr><p class="index-post-date">{{ post.date | date_to_string }}</p></nobr>
             </div>
-            <div class="column2" style="margin:0;padding:0;">
-                <h1 style="display:inline;vertical-align:top;padding-left: 1.5rem;" class="hpost">
+            <div class="column2 no-mar-pad">
+                <h1 class="index-post-h">
                     <a href="{{ post.url }}">{{ post.title }}</a>
                 </h1>
             </div>
