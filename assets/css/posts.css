@@ -1,0 +1,35 @@
+.post-h {
+    color: #eaeaea;
+    font-family: SourceSansPro_Light;
+    font-size: 2.0rem;
+}
+
+.post-date {
+    color: #edd687;
+    font-size: 0.825rem;
+}
+
+.post-content {
+    font-family: Lato_Light;
+    font-size: 1.1rem;
+}
+
+a:link {
+    text-decoration: none;
+    color: #edd687;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #edd687;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #edd687;
+}
+
+a:active {
+    text-decoration: none;
+    color: #edd687;
+}
