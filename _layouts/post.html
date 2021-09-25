@@ -1,11 +1,14 @@
 ---
 layout: default
 ---
-<h1 class="hpost">{{ page.title }}</h1>
-<p>{{ page.date }} - Written by {{ page.author }}</p>
+<link rel="stylesheet" href="/assets/css/posts.css"><link type="application/atom+xml" rel="alternate" title="posts css" />
+<h1 class="post-h">{{ page.title }}</h1>
+<p class="post-date">{{ page.date | date_to_long_string }} - Written by {{ page.author }}</p>
 
-{{ content }}
+<div class="post-content">
+    {{ content }}
+</div>
 
-<svg class="svg-icon"><use xlink:href="/assets/imgs/minima-social-icons.svg#facebook"></use></svg>
-<svg class="svg-icon"><use xlink:href="/assets/imgs/minima-social-icons.svg#instagram"></use></svg>
-<svg class="svg-icon"><use xlink:href="/assets/imgs/minima-social-icons.svg#twitter"></use></svg>
+<a href="https://www.facebook.com/prrocoin"><svg class="svg-icon"><use xlink:href="/assets/imgs/minima-social-icons.svg#facebook"></use></svg></a>
+<a href="https://www.instagram.com/prrocoin"><svg class="svg-icon"><use xlink:href="/assets/imgs/minima-social-icons.svg#instagram"></use></svg></a>
+<a href="https://twitter.com/CoinPrro"><svg class="svg-icon"><use xlink:href="/assets/imgs/minima-social-icons.svg#twitter"></use></svg></a>
